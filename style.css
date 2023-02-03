@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    background-color: hsl(225, 100%, 98%);
+    padding: 30px;
+    height: 180px;
+}
+
+header .container{
+    width: 80%;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container p{
+    color: hsl(228, 12%, 44%);
+    font-weight: bold;
+}
+
+.toogle_{
+    display: flex;
+    align-items: center;
+}
+
+.toogle_ p{
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+.toogle_ .toggle{
+    background-color: hsl(230, 22%, 74%);
+    width: 55px;
+    height: 25px;
+    border-radius: 0.8rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.toogle_ .toggle:hover{
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.toogle_ .toggle .circle{
+    background-color: hsl(227, 47%, 96%);
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    transition: 0.5s;
+}
+
+.header .cards{
+    position: relative;
+    top: -110px;
+}
+
+.header .cards .container{
+    width: 80%;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header .card{
+    background-color: hsl(227, 47%, 96%);
+    text-align: center;
+    width: 19%; /* 200 */
+    padding: 30px 20px;
+    border-radius: 6px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.header .card-f{
+    border-top: 4px solid hsl(208, 92%, 53%);
+}
+
+.header .card-t{
+    border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+.header .card-insta::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.header .card-yt{
+    border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+.header .card img{
+    margin-right: 10px;
+}
+
+.header .card .followers{
+    margin: 30px 0;
+}
+
+.header .card .followers h1{
+    font-size: 55px;
+}
+
+.header .card .followers p{
+    color: hsl(228, 12%, 44%);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.rates .container{
+    width: 80%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.rates h2{
+    color: hsl(228, 12%, 44%);
+    margin-bottom: 30px;
+}
+
+.rates .cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.rates .card{
+    background-color: hsl(227, 47%, 96%);
+    width: 20%; /* 220 */
+    margin-bottom: 25px;
+    padding: 20px;
+    padding-top: 25px;
+    border-radius: 6px;
+}
+
+.rates .card .top,
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rates .card .top{
+    margin-bottom: 30px;
+}
+
+.rates .card .top p{
+    color: hsl(228, 12%, 44%);
+    font-weight: bold;
+}
+
+.card:hover{
+    background-color: hsl(227, 24%, 89%);
+    cursor: pointer;
+}
+
+.dark{
+    background-color: hsl(230, 17%, 14%);
+    color: #fff;
+}
+
+.dark header{
+    background-color: hsl(232, 19%, 15%);
+}
+
+.dark .card{
+    background-color: hsl(228, 28%, 20%);
+}
+
+.dark .card:hover{
+    background-color: hsla(229, 12%, 44%, 0.466);
+}
+
+.dark .toggle{
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.dark .toggle .circle{
+    transform: translateX(-30px);
+    background-color: hsl(230, 17%, 14%);
+}
+
+@media (max-width: 780px) {
+    header{
+        border-radius: 0 0 15px 15px;
+    }
+    .header .cards{
+        top: -20px;
+    }
+    .header .card{
+        width: 100%;
+    }
+    .rates .card{
+        width: 100%;
+    }
+    header .container{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    header .text{
+        margin-bottom: 20px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #656565;
+    }
+    .toogle_{
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    .header .card{
+        width: 270px;
+    }
+    .rates .card{
+        width: 270px;
+    }
+}
