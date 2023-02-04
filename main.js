@@ -1,5 +1,5 @@
 let imgs = document.querySelectorAll("img");
-document.body.classList.add("dark")
+
 let imgs_up_arrow_arr = [];
 let imgs_down_arrow_arr = [];
 
